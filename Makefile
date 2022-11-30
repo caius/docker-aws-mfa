@@ -2,10 +2,7 @@ GIT_SHA?=$(shell git rev-parse HEAD 2>/dev/null)
 TIMESTAMP?=$(shell date "+%Y-%m-%dT%H:%M:%S")
 
 .PHONY: default
-default: aws-mfa
-
-.PHONY: aws-mfa
-aws-mfa: docker-run
+default: docker-run
 
 .PHONY: docker-build
 docker-build:
