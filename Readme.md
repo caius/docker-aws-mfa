@@ -9,13 +9,13 @@ Mount your `~/.aws` folder under `/root` to have it operate on your profile, pas
 To refresh with the max token length possible:
 
 ```sh
-docker run --rm --interactive --tty --volume $HOME/.aws:/root/.aws caius/aws-mfa:latest --duration 129600
+docker run --rm --interactive --tty --volume $HOME/.aws:/root/.aws ghcr.io/caius/aws-mfa:latest --duration 129600
 ```
 
 You can also set up a shell alias locally so you don't need to run all that:
 
 ```sh
-alias aws-mfa="docker run --rm --interactive --tty --volume \$HOME/.aws:/root/.aws caius/aws-mfa:latest --duration 129600"
+alias aws-mfa="docker run --rm --interactive --tty --volume \$HOME/.aws:/root/.aws ghcr.io/caius/aws-mfa:latest --duration 129600"
 ```
 
 [`aws-mfa`]: https://pypi.org/project/aws-mfa/
