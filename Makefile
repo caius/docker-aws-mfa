@@ -24,4 +24,4 @@ docker-release:
 
 .PHONY: docker-run
 docker-run:
-	docker run --rm -it -v $$HOME/.aws:/root/.aws caius/aws-mfa:latest --duration 129600
+	docker run --rm -it -v $$HOME/.aws:/root/.aws ghcr.io/caius/aws-mfa:latest --duration 129600
