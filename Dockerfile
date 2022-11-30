@@ -9,7 +9,7 @@ LABEL org.opencontainers.image.description="An easy way to run aws-mfa to (re)ge
 LABEL org.opencontainers.image.base.name=docker.io/library/python:3.10-slim-bullseye
 
 RUN pip install --upgrade pip
-
-RUN pip install aws-mfa==0.0.12
+COPY requirements.txt .
+RUN pip install --requirement requirements.txt
 
 ENTRYPOINT ["aws-mfa"]

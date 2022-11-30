@@ -1,2 +1,3 @@
 # This acts as a whitelist, if something is missing allow it with a ! line
 /*
+!requirements.txt
